@@ -1,0 +1,198 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    display: flex;
+    height: auto;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally if needed */
+    margin: 0;
+}
+
+.top-container {
+    width: 100%;
+    display: grid;
+    padding: 20px 0px 0px 20px;
+    grid-template-columns: 30% 70%;
+    /* border-radius: 10px; */
+}
+.bottom-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px 20px 20px 20px;
+    background-color: #fbfbfb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+    
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom-container .left{ 
+    margin-left: 10px;
+}
+.top-left {
+    flex: 7; /* Takes 70% of the left container height */
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center items horizontally */
+    position: relative; /* Position container for margins and alignment */
+}
+.top-left img {
+    width: 100%; /* Fit image to the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+    display: block; /* Remove any extra spacing under image */
+    margin-bottom: 20px; /* Margin below the image */
+}
+
+
+.bottom-left {
+    flex: 3; /* Takes 30% of the left container height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Fixed height for the bottom-left section */
+    width: 100%; /* Ensures it takes up full width of the parent container */
+    background-color: #fbfbfb;
+    margin-bottom: 15px
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.top-right {
+    background-color: rgb(247, 247, 247);
+    margin-bottom: 20px;
+    flex: 3; /* Takes 30% of the right container height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.bottom-right {
+    /* margin-right: 20px; */
+    background-color: #fbfbfb; /* Different background for bottom-right */
+    flex: 7; /* Takes 70% of the right container height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+
+}
+#bottom-bottom {
+    padding-bottom: 10px;
+}
+.title {
+    margin-left: 10px;
+}
+.name {
+    font-size: 60px;
+    margin-bottom: 10px;
+    font: bold;
+    color: #302c2c;
+}
+.position {
+    font-size: 35px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center media horizontally */
+    height: auto; /* Allow the container height to adjust based on content */
+    width: 100%;
+    padding: 10px;
+}
+.media {
+    height: auto;
+    width: 100%;
+}
+.media-info{
+    margin-top: 10px;
+    /* background-color: #e0e0e0; */
+    height: 100%;
+    width: 100%;
+}
+.media video{
+    width: 100%;
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover; /* Crop the image to cover the container, preserving aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+.media img{
+    width: 100%;
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover; /* Crop the image to cover the container, preserving aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+.slider {
+    position: relative;
+    max-width: 100%; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover; /* Crop the image to cover the container, preserving aspect ratio */
+    object-position: center; /* Center the image within the container */
+    margin: 0; /* Reset any auto-added margins */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transform: translateY(-50%);
+    opacity: 0; /* Hide buttons */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+/* Show buttons on slider hover */
+.slider:hover button {
+    opacity: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.bottom-container .right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    
+}

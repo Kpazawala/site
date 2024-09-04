@@ -1,10 +1,200 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Profile</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="top-container">
+        <div class="left">
+            <div class="top-left">
+                <img src="imgs/strectch-robot.png" alt="stretch-robot">
+            </div>
+            <div class="bottom-left">
+                <b>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </b>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top-right">
+                <div class = "title">
+                    <div class="name">KPAZAWALA WINDROSS</div>
+                    <div class="position">Computer Engineering Intern<br>Hello Robot Summer 2024</div>
+                </div>  
+            </div>
+            <div class="bottom-right">
+                <div class="gallery">
+                    <div class="media-container">
+                        <div class="media">
+
+                            <div class="slider">
+                                <div class="slides" id="slide1">
+                                    <div class="slide">
+                                        <img src="imgs/simpleFOC_driver.jpeg" alt="image 1">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="imgs/solder.jpeg" alt="image 2">
+                                    </div>
+                                </div>
+                                <button class="prev" onclick="prevSlide('slide1')">&#10094;</button>
+                                <button class="next" onclick="nextSlide('slide1')">&#10095;</button>
+                            </div>
+
+                        </div>
+                        <div class = "media-info">
+                            <b>Info</b>
+                        </div>
+                    </div>
+                    <div class="media-container">     
+                        <div class="media">
+                            
+                            <div class="slider">
+                                <div class="slides" id="slide2">
+                                    <div class="slide">
+                                        <img src="imgs/encoder.jpeg" alt="image 1">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="imgs/encoder_bp.png" alt="image 2">
+                                    </div>
+                                </div>
+                                <button class="prev" onclick="prevSlide('slide2')">&#10094;</button>
+                                <button class="next" onclick="nextSlide('slide2')">&#10095;</button>
+                            </div>
+                            
+                        </div>
+                        <div class = "media-info">
+                            <b>Info</b>
+                        </div>
+                    </div>
+                    <div class="media-container">
+                        <div class="media">
+                            <video src="vids/gimbal.mp4" autoplay muted loop></video>
+                        </div>
+                        <div class = "media-info">
+                            <b>Info</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-right" id="bottom-bottom">
+                <div class="gallery">
+                    <div class="media-container">
+                        <div class="media">
+
+                            <div class="slider">
+                                <div class="slides" id="slide3">
+                                    <div class="slide">
+                                        <img src="imgs/motorCAD1.png" alt="image 1">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="imgs/motorCAD2.jpeg" alt="image 2">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="imgs/motorCAD3.jpeg" alt="image 2">
+                                    </div>
+                                </div>
+                                <button class="prev" onclick="prevSlide('slide3')">&#10094;</button>
+                                <button class="next" onclick="nextSlide('slide3')">&#10095;</button>
+                            </div>
+
+                        </div>
+                        <div class = "media-info">
+                            <b>Info</b>
+                        </div>
+                    </div>
+                    <div class="media-container">     
+                        <div class="media">
+                            <img src="imgs/motorAngle.jpeg" alt="image 2">
+                        </div>
+                        <div class = "media-info">
+                            <b>Info</b>
+                        </div>
+                    </div>
+                    <div class="media-container">
+                        <div class="media">
+                            <img src="imgs/motorTorque.jpeg" alt="image 2">
+                        </div>
+                        <div class = "media-info">
+                            <b>Info</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="left">
+            <div class="media-container">
+                <div class="media">
+                    <video src="vids/oscillate.MOV" autoplay muted loop></video>
+                </div>
+                <div class = "media-info">
+                    <b>Info</b>
+                </div>
+            </div>
+        </div>  
+        <div class="right">
+            <div class = "gallery">
+                <div class="media-container">
+                    <div class="media">
+
+                        <div class="slider">
+                            <div class="slides" id="slide4">
+                                <div class="slide">
+                                    <img src="imgs/servo1.png" alt="image 1">
+                                </div>
+                                <div class="slide">
+                                    <img src="imgs/servo2.png" alt="image 2">
+                                </div>
+                            </div>
+                            <button class="prev" onclick="prevSlide('slide4')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('slide4')">&#10095;</button>
+                        </div>
+
+                    </div>
+                    <div class = "media-info">
+                        <b>Info</b>
+                    </div>
+                </div>
+                <div class="media-container">
+                    <div class="media">
+
+                        <div class="slider">
+                            <div class="slides" id="slide5">
+                                <div class="slide">
+                                    <img src="imgs/cad1.png" alt="image 1">
+                                </div>
+                                <div class="slide">
+                                    <img src="imgs/cad2.png" alt="image 2">
+                                </div>
+                                <div class="slide">
+                                    <img src="imgs/cad3.png" alt="image 1">
+                                </div>
+                                <div class="slide">
+                                    <img src="imgs/cad4.png" alt="image 2">
+                                </div>
+                            </div>
+                            <button class="prev" onclick="prevSlide('slide5')">&#10094;</button>
+                            <button class="next" onclick="nextSlide('slide5')">&#10095;</button>
+                        </div>
+
+                    </div>
+                    <div class = "media-info">
+                        <b>Info</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
